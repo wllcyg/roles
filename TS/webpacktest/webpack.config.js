@@ -5,8 +5,13 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
-        clean: true
+        clean: true,
+        // 不使用webpack
+        environment:{
+            arrowFunction:false
+        }
     },
+
     module: {
         // 指定loader规则
         rules: [{
@@ -19,7 +24,8 @@ module.exports = {
                             '@babel/preset-env',
                             {
                                 targets:{
-                                    'chrome':'30'
+                                    'chrome':'30',
+                                    'ie':'8'
                                 },
                                 'corejs':'3',
                                 'useBuiltIns':'usage'
