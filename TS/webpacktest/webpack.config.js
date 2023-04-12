@@ -8,7 +8,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
         clean: true,
-        // 不使用webpack
+        // 不使用箭头函数
         environment:{
             arrowFunction:false
         }
