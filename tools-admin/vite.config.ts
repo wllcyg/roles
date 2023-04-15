@@ -1,13 +1,16 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import  path  from 'path'
+import path from 'path'
+import eslintPlugin from 'vite-plugin-eslint'
 export default defineConfig(({ command, mode, ssrBuild }) => {
-  
+
   const baseConfig = {
-    plugins:[vue()],
-    resolve:{
-      alias:{
-        '@':path.resolve(__dirname,'src')
+    plugins: [vue(), eslintPlugin({
+      include: ['src/**/*.ts', 'src/**/*.vue']
+    })],
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, 'src')
       }
     }
   }
@@ -20,11 +23,11 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
     return {
       // build 独有配置
       ...baseConfig,
-      build:{
-        outDir:'dist',
-        assetsDir:'assets',
-        cssMinify:true,
-        sourcemap:'hidden',
+      build: {
+        outDir: 'dist',
+        assetsDir: 'assets',
+        cssMinify: true,
+        sourcemap: 'hidden'
       }
     }
   }
