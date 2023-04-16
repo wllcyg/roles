@@ -1,7 +1,7 @@
 <script setup lang="ts">
-
-defineProps<{ msg: string }>()
-
+const props = defineProps({
+  foo:{type:String,required:true}
+})
 </script>
 
 <template>

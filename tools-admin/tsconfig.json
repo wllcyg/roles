@@ -11,8 +11,16 @@
     "esModuleInterop": true,
     "lib": ["ESNext", "DOM"],
     "skipLibCheck": true,
-    "noEmit": true
+    "noEmit": true,
+    "baseUrl": ".", // 此处与下面是为了去掉页面的路径别名警告
+    "paths": {
+      "@/*":["src/*"],
+      "components":["src/components/*"],
+      "_pinia/*":["src/pinia/*"]
+    }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  
+
 }
