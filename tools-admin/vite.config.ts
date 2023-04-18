@@ -3,11 +3,9 @@ import vue from '@vitejs/plugin-vue'
 import path from 'path'
 import eslintPlugin from 'vite-plugin-eslint'
 export default defineConfig(({ command, mode, ssrBuild }) => {
-
+  // eslintPlugin({include: ['src/**/*.ts', 'src/**/*.vue']}) // 临时去调后续再加上
   const baseConfig = {
-    plugins: [vue(), eslintPlugin({
-      include: ['src/**/*.ts', 'src/**/*.vue']
-    })],
+    plugins: [vue(), ],
     resolve: {
       alias: {
         '@': path.resolve(__dirname, 'src')
