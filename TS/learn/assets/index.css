@@ -17,13 +17,14 @@ audio{
     overflow: hidden;
 }
 .container ul{
+    transform: translateY(210px);
     /* 只是针对数值变化有效 */
-    transition: all 0.2s; 
+    transition: all 0.16s;
 }
 .container li{
     height: 30px;
     line-height: 30px;
-    transition: all 0.2s;
+    transition: all 0.16s;
 }
 
 .container li.active{
