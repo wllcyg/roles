@@ -15,7 +15,6 @@ audio{
 .container{
     height: 420px;
     overflow: hidden;
-    border: 1px solid red;
 }
 .container ul{
     /* 只是针对数值变化有效 */
