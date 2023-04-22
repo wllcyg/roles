@@ -5,10 +5,10 @@ import SlideBar from "./module/SlideBar.vue";
 </script>
 <template>
   <div class="flex justify-between w-full h-full">
-    <SlideBar class="slide transition-all duration-3 w-53" />
+    <SlideBar class="transition-all duration-3"/>
     <section class="flex-1">
-      <NavHeader />
-      <Appmain />
+      <NavHeader/>
+      <Appmain/>
     </section>
   </div>
 </template>
