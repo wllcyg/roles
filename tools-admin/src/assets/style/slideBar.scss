@@ -2,13 +2,21 @@
     .slidebar-wraper{
         .el-menu{
             background: #304156;
-
+                
         }
+        .el-sub-menu__title,
+        .el-menu-item-group__title,
         .el-menu-item{
-            color: rgb(64, 158, 255);;
+            color: #fff;
+        }
+        .el-menu-item.is-active{
+            color: #409eff;
         }
         .el-menu-item:hover{
-            background-color: #263445!important;
+            background: #001528;
+        }
+        .el-sub-menu__title:hover{
+            background: #263445;
         }
     }
 }

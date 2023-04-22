@@ -6,7 +6,7 @@ const props = defineProps({
 
 <template>
   <div>
-    1111111111111111111
+    我是首页
   </div>
 </template>
 
