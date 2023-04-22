@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Appmain from "./module/Main.vue";
-import NavHeader from "./module/NavHeader.vue";
-import SlideBar from "./module/SlideBar.vue";
+import Appmain from './module/Main.vue'
+import NavHeader from './module/NavHeader.vue'
+import SlideBar from './module/SlideBar.vue'
 </script>
 <template>
   <div class="flex justify-between w-full h-full">
