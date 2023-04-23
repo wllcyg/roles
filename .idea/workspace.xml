@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a4ad5b3-1019-4252-9d87-7a1e16a88064" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools-admin/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/tools-admin/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools-admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/tools-admin/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools-admin/src/layout/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/tools-admin/src/layout/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools-admin/src/layout/module/Main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/tools-admin/src/layout/module/Main.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools-admin/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tools-admin/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools-admin/components.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tools-admin/components.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools-admin/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tools-admin/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools-admin/src/page/canvas/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/tools-admin/src/page/canvas/index.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,21 +29,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/网易云/roles",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "F:\\项目结合\\roles\\tools-admin\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/网易云/roles&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;F:\\项目结合\\roles\\tools-admin\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -57,6 +54,7 @@
       <updated>1681973335817</updated>
       <workItem from="1681973336875" duration="5584000" />
       <workItem from="1682141531514" duration="2495000" />
+      <workItem from="1682213899161" duration="6000" />
     </task>
     <servers />
   </component>

@@ -8,7 +8,7 @@ const props = defineProps({
 
 <template>
   <div>
-    我是canvas页面
+    我是firJs页面
   </div>
 </template>
 
