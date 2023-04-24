@@ -17,15 +17,6 @@ const toView = (el) => {
   activeIndex.value = el.index
   router.push(el.index)
 }
-const openSub = (el) => {
-  let item = slideBar.find(e => el === e.meta.id)
-  if (item) {
-    let toPath = item.children[0].path
-    activeIndex.value = toPath
-    router.push(toPath)
-  }
-
-}
 </script>
 <template>
   <!-- 目前先支持一层目录结构 -->
@@ -33,7 +24,6 @@ const openSub = (el) => {
     <el-menu
       :default-active="activeIndex"
       class="el-menu-vertical-demo"
-      @open='openSub'
     >
       <ul
         v-for="(item) in slideBar"
