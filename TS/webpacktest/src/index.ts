@@ -1,7 +1,7 @@
 import './style/index.less'
 
-import Snake from './modules/snake'
-
+import GamaControl from './modules/GameConteol'
+new GamaControl();
 
 
 

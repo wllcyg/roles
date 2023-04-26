@@ -3,6 +3,7 @@ import { fabric } from 'fabric'
 import { onMounted, ref } from 'vue'
 const canRef = ref(null)
 const canRefBg = ref(null)
+const canvasbind = ref(null)
 const imgUrl =
   'https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/27d1b4e5f8824198b6d51a2b1c2d0d75~tplv-k3u1fbpfcp-zoom-crop-mark:400:400:400:400.awebp'
 const init = () => {
@@ -41,9 +42,13 @@ const initbg = () => {
     })
   })
 }
+const initbind = () => {
+
+}
 onMounted(() => {
   init()
   initbg()
+  initbind()
 })
 </script>
 
@@ -58,7 +63,7 @@ onMounted(() => {
       ref="canRefBg"
       class="w-52 h-52 rounded-xl border-solid border-blue-400 border-2"
     ></canvas>
-
+    <canvas width="400" height="375" ref="canvasbind" style="border: 1px solid #ccc;"></canvas>
   </div>
 </template>
 
