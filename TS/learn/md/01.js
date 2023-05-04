@@ -4,7 +4,6 @@ function a() {
     console.log(2);
   });
 }
-
 setTimeout(() => {
     console.log(3);
     Promise.resolve().then(a)
@@ -25,3 +24,64 @@ console.log(5);
  * 6.执行log2
  * 7. 结果 54312
  * **/
+
+// 关于依赖的收集
+
+const user = {
+  name:'张三',
+  age:12
+}
+let tempname = user.name
+Object.defineProperty(user,'name',{
+  get:function(){
+    return tempname
+  },
+  set:function(val){
+    tempname = val
+    // 监听到修改后调用依赖的函数
+    showName()
+  }
+})
+function showName(){
+  console.log(user.name,'11111111');
+}
+user.name = '李四'
+
+const userObj = {
+  name:'王五',
+  age:12
+}
+
+/**
+ * 观察对象的属性
+ * @param {Object} obj
+ * 
+*/
+function observe(object){
+  for (const key in object) {
+    let internalValue = object[key]
+    let foos = []
+    Object.defineProperty(object,key,{
+      get:function(){
+        // 依赖收集:记录谁在用
+        if (window.__func && !foos.includes(window.__func)) {
+          foos.push(window.__func)
+        }
+        return internalValue
+      },
+      set:function(val){
+        // 派发更新运行依赖
+        internalValue = val
+        for (let i = 0; i < foos.length; i++) {
+          foos[i]();          
+        }
+      }
+    })
+  }
+}
+observe(userObj)
+function autorun(fn){
+  window.__func = fn
+  fn()
+  window.__func = null
+}
