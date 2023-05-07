@@ -18,7 +18,8 @@ export default defineConfig(({command, mode, ssrBuild}) => {
       alias: {
         '@': path.resolve(__dirname, 'src')
       }
-    }
+    },
+    server:{ host: '127.0.0.1', port: 3000 }
   }
   if (command === 'serve') {
     return {
