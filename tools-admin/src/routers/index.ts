@@ -10,7 +10,7 @@ const routes = [
     meta:{title:'首页',icon:'Histogram',id:1},
     children:[
       {
-        path:'/dashbord',
+        path:'/dashbord', 
         name:'dashbord',
         component:() => import('@/page/datashboard/index.vue')
       }
