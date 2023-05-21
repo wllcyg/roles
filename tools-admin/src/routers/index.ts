@@ -10,7 +10,7 @@ const routes = [
     meta:{title:'首页',icon:'Histogram',id:1},
     children:[
       {
-        path:'/dashbord', 
+        path:'/dashbord',
         name:'dashbord',
         component:() => import('@/page/datashboard/index.vue')
       }
@@ -30,10 +30,22 @@ const routes = [
         meta:{title:'canvas基础',id:20}
       },
       {
+        path:'/canvas/Scratchcard',
+        name:'Scratchcard',
+        component:() => import('@/page/canvas/Scratchcard.vue'),
+        meta:{title:'刮刮卡',id:22}
+      },
+      {
         path:'/canvas/fir',
         name:'fir',
         component:() => import('@/page/fir/index.vue'),
         meta:{title:'fir基础',id:21}
+      },
+      {
+        path:'/canvas/canvashome',
+        name:'canvashome',
+        component:() => import('@/page/canvas/canvashome.vue'),
+        meta:{title:'fcanvashome基础',id:23}
       }
     ]
   }
