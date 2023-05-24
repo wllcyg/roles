@@ -1,26 +1,32 @@
-import React, { PureComponent } from 'react'
+import {PureComponent} from 'react'
+
 /**
- * mobx 
+ * mobx
  * redux
  * 基于hook
-*/
+ * props 可以传递任意的数据,数字,字符串,布尔值,对象,函数,jsx等
+ */
+interface propType {
+    msg:string,
+    age:Number
+}
 export default class App2 extends PureComponent {
-    state = {
-        msg:'我是张三的数据'
+    state:propType = {
+        msg: '1111',
+        age:12
     }
-  render() {
-    return (
-      <div>App2 <Child1 msg = {this.state.msg}/> </div>
-    )
-  }
+    render() {
+        return (
+            // @ts-ignore
+            <div>App2 <Child1 msg={this.state.msg}/></div>
+        )
+    }
 }
 
-function Child1(props:unknown) {
-    console.log(props);
-    
-    return(
+function Child1(props:propType) {
+    return (
         <div>
-            我是子组件
+            我是子组件 {props.msg}
         </div>
     )
 }
