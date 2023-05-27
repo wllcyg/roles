@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a4ad5b3-1019-4252-9d87-7a1e16a88064" name="变更" comment="1">
+    <list default="true" id="6a4ad5b3-1019-4252-9d87-7a1e16a88064" name="变更" comment="变更">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/react/src/pages/02_组件.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/react/src/pages/02_组件.tsx" afterDir="false" />
     </list>
@@ -12,6 +12,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/react/src/pages/02_组件.tsx" root0="SKIP_HIGHLIGHTING" />
@@ -35,6 +38,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "E:/blogs/roles",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -42,7 +46,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
     "settings.editor.selected.configurable": "preferences.lookFeel",
-    "ts.external.directory.path": "E:\\blogs\\roles\\TS\\webpacktest\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "F:\\项目结合\\roles\\tools-admin\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -70,6 +74,7 @@
       <workItem from="1684658088590" duration="85000" />
       <workItem from="1684935133942" duration="1327000" />
       <workItem from="1684936959756" duration="788000" />
+      <workItem from="1685171816883" duration="2641000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1683499727411</created>
